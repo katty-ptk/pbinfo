@@ -56,9 +56,19 @@ int main() {
             }
             break;
 
-        case 4:
+        case 4: // done
             // triunghi isoscel
-            cout << "c is 4";
+            for ( int i = 1; i <= n; i++ ) {
+                for ( int j = 1; j <= 2 * n - 1; j++ ) {
+                    if ( ( j == n ) || ( j < n && j > n - i ) || ( j > n && j < n + i ) ) {
+                        cout << i;
+                    } else {
+                        cout << " ";
+                    }
+                }
+
+                cout << endl;
+            }
             break;
     }
 
