@@ -5,7 +5,7 @@ int main() {
 
     int n = 10;
 
-    // partea 2
+    // partea 1
     for ( int i = 1; i < n; i++ ) {
         for ( int j = 1; j <= n - i; j++ ) {
             cout << "#";
@@ -31,6 +31,25 @@ int main() {
 
         cout << endl;
     }
+
+    // partea 3
+    for ( int i = 1; i < n; i++ ) {
+        for ( int j = 1; j <= i; j++ ) {
+            cout << "#";
+        }
+
+        for ( int j = 1; j <= ( 3 * n - 2 ) - ( 2 * i ); j++ ) {
+            cout << "*";
+        }
+
+        for ( int j = 1; j <= i; j++ ) {
+            cout << "#";
+        }
+
+        cout << endl;
+    }
+
+
 
     return 0;
 }
